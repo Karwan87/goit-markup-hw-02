@@ -1,65 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-01</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>goit-markup-hw-02</title>
   </head>
   <body>
+    <font-family>'Roboto'</font-family>
     <header>
-      <nav>
+      <nav class="menu">
         <ul>
           <li>
-            <a href="/"><span>Web</span>Studio</a>
+            <a class="logo" href="/"
+              ><span style="color: #2196f3">Web</span>Studio</a
+            >
           </li>
-          <li><a href="/">Agencja</a></li>
-          <li><a href="/">Portfolio</a></li>
-          <li><a href="/">Kontakt</a></li>
+          <li><a class="agency" href="/">Agencja</a></li>
+          <li>
+            <a class="portfolio" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="contact" href="/">Kontakt</a></li>
         </ul>
       </nav>
       <ul>
-        <li><a href="mailto:info@devstodio.com">info@devstudio.com</a></li>
-        <li><a href="+48111111111">+48 111 111 111</a></li>
+        <li>
+          <a class="email" href="mailto:info@devstodio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li><a class="telephone" href="+48111111111">+48 111 111 111</a></li>
       </ul>
     </header>
     <main>
       <section>
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button>Zamów usługę</button>
+        <div class="primarysection">
+          <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <button class="text">Zamów usługę</button>
+        </div>
+
         <ul>
           <li>
-            <h4>LOREM IPSUM</h4>
-            <p>
+            <h4 class="title2">LOREM IPSUM</h4>
+            <p class="text2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h4>LOREM IPSUM</h4>
-            <p>
+            <h4 class="title3">LOREM IPSUM</h4>
+            <p class="text3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h4>LOREM IPSUM</h4>
-            <p>
+            <h4 class="title4">LOREM IPSUM</h4>
+            <p class="text4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h4>LOREM IPSUM</h4>
-            <p>
+            <h4 class="title5">LOREM IPSUM</h4>
+            <p class="text5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
-        <h2>Czym się zajmujemy</h2>
+        <h2 class="title6">Czym się zajmujemy</h2>
         <ul>
           <li>
             <img
+              class="img1"
               src="images/box1.jpg"
               width="250"
               height="250"
@@ -68,6 +89,7 @@
           </li>
           <li>
             <img
+              class="img2"
               src="images/box2.jpg"
               width="250"
               height="250"
@@ -76,6 +98,7 @@
           </li>
           <li>
             <img
+              class="img3"
               src="images/box3.jpg"
               width="250"
               height="250"
@@ -83,24 +106,24 @@
             />
           </li>
         </ul>
-        <h2>Nasz zespół</h2>
+        <h2 class="title7">Nasz zespół</h2>
         <ul>
           <li>
-            <figure>
+            <figure class="figcaption1">
               <img
                 src="images/photo1.jpg"
                 width="250"
                 height="250"
                 alt="Pierwszy członek zespołu John Doe"
               />
-              <figcaption>
+              <figcaption class="name">
                 John Doe
-                <p>Product Designer</p>
+                <p class="jobstatus">Product Designer</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="figcaption2">
               <img
                 src="images/photo2.jpg"
                 width="250"
@@ -108,14 +131,14 @@
                 alt="Drugi członek zespołu John Doe"
               />
 
-              <figcaption>
+              <figcaption class="name">
                 John Doe
-                <p>Frontend Developer</p>
+                <p class="jobstatus">Frontend Developer</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="figcaption3">
               <img
                 src="images/photo3.jpg"
                 width="250"
@@ -123,14 +146,14 @@
                 alt="Trzeci członek zespołu John Doe"
               />
 
-              <figcaption>
+              <figcaption class="name">
                 John Doe
-                <p>Marketing</p>
+                <p class="jobstatus">Marketing</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="figcaption4">
               <img
                 src="images/photo4.jpg"
                 width="250"
@@ -138,21 +161,25 @@
                 alt="Czwarty członek zespołu John Doe"
               />
 
-              <figcaption>
+              <figcaption class="name">
                 John Doe
-                <p>UI Designer</p>
+                <p class="jobstatus">UI Designer</p>
               </figcaption>
             </figure>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <h5>WebStudio</h5>
-      <address>
+    <footer class="footer1">
+      <h5 class="logo-footer"><span style="color: #2196f3">Web</span>Studio</h5>
+      <address class="address">
         m. Warszawa, Aleje Jerozolimskie 21
-        <p>info@example.com</p>
-        <p>+ 48 111 111 111</p>
+        <p style="color: rgba(255, 255, 255, 0.6); margin-top: 9px">
+          info@example.com
+        </p>
+        <p style="color: rgba(255, 255, 255, 0.6); margin-top: 9px">
+          + 48 111 111 111
+        </p>
       </address>
     </footer>
   </body>
